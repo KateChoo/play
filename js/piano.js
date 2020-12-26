@@ -13,6 +13,20 @@ const blackKall = document.querySelectorAll('.black')
 const curtainNav = document.querySelector('.curtainNav')
 /*=====================================================================================*/ 
 const banner = document.querySelector('.pillar')
+var red;
+var green;
+var blue;
+var rgbColor;
+const randomColor = ()=> {
+  for (var i = 0; i <=10; i += 1) {
+  red = Math.floor(Math.random() * 256 );
+  green = Math.floor(Math.random() * 256 );
+  blue = Math.floor(Math.random() * 256 );
+  rgbColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+  // html += '<div style="background-color:' + rgbColor + '"></div>';
+  return rgbColor;
+  }
+}
 /*=====================================================================================*/ 
 
 let bannerImgs = [
@@ -41,16 +55,21 @@ whiteKall.forEach(white => {
 
 function pressHint(){
   indicators[3].classList.add('pressHint')
-  indicators[6].classList.add('pressHint')
+  //indicators[3].style.background = randomColor()
   indicators[3].textContent = '按'
 }
 function hintToggle(indi){
   indicators[3].classList.remove('pressHint')
+  //indicators[3].style.background = ''
   indicators[3].textContent = ''
-  indi.classList.add('hint');
+  indi.style.background = randomColor()
   indi.addEventListener('mouseleave', ()=>{
-    indi.classList.remove('hint');
+    indi.style.background = ''
   })
+  // indi.classList.add('hint');
+  // indi.addEventListener('mouseleave', ()=>{
+  //   indi.classList.remove('hint');
+  // })
 }
 document.addEventListener('keydown', e => {
   if (e.repeat) return

@@ -16,13 +16,12 @@
     overflow: hidden; 
     z-index: 999;
   }
-  .pianoKeys li.hint{
-    background: rgb(192, 255, 195);
-  }
+  // .pianoKeys li.hint{
+  //   background: #A53869;
+  // }
   .pianoKeys li:nth-child(4).pressHint{
-    background: red;
+    background: #A53869;
     animation: 1s pressHint infinite;
-
   }
   @keyframes pressHint{
     0%{opacity:1}

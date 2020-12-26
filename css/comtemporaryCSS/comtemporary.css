@@ -334,12 +334,8 @@ header {
   z-index: 999;
 }
 
-.pianoKeys li.hint {
-  background: #c0ffc3;
-}
-
 .pianoKeys li:nth-child(4).pressHint {
-  background: red;
+  background: #A53869;
   -webkit-animation: 1s pressHint infinite;
           animation: 1s pressHint infinite;
 }
