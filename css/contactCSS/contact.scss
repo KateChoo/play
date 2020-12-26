@@ -1,0 +1,157 @@
+@import '../commonCSS/common.scss';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+    /* width: 100vw; */
+    // overflow: hidden;
+    /* background-image: url(https://cdn.pixabay.com/photo/2017/10/19/03/35/christmas-2866377_1280.jpg); */
+    /* background-image: url(https://cdn.pixabay.com/photo/2018/08/26/08/16/mario-3631666_1280.png); */
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 1000px;
+    /* border: solid black; */
+    /* margin: 0 auto; */
+    margin-right: 5px;
+}
+
+.grid div {
+    width:  50px;
+    height: 50px;  
+    text-align: center;
+    color:#fff;
+}
+.flex{
+    display:flex;
+    flex-direction: row;
+}
+.hide{
+    /*why this won't work*/
+    /* display: none;     */
+    opacity: 0;
+}
+.background_color {
+    background: #fff;
+}
+
+.red {
+    background: rgb(184, 34, 34);
+}
+.hair {
+    background: rgb(145, 124, 30);
+}
+.yellow {
+    background: rgb(250, 181, 30);
+}
+.blue {
+    background: blue;
+}
+.green{
+    background: green;
+}
+.change_background {
+    background: rgb(1, 40, 165);
+}
+h5:hover{
+    margin-left: 5px;
+    transition: .3s ease-out;
+    transform: scale(1.1);
+}
+.hintBg{
+    font-weight: 900;
+    animation:hint 1s 5;
+    font-size: 3rem;
+    color: transparent;
+    margin: -10px;
+    padding: 0;
+}
+@keyframes hint{
+    from, to { color: transparent }
+    50% { color: red; }
+}
+.hintSm{
+    display: none;
+}
+@media screen and (min-width: 1200px){
+    .grid {
+        width: 900px;
+        height: 900px;
+    }
+
+    .grid div {
+        width:  45px;
+        height: 45px;  
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    .grid {
+        width: 750px;
+        height: 750px;
+    }
+
+    .grid div {
+        width:  37.5px;
+        height: 37.5px;  
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px){
+    .grid {
+        width: 500px;
+        height: 500px;
+    }
+
+    .grid div {
+        width:  25px;
+        height: 25px;  
+    }
+}
+
+@media screen and (max-width:750px){
+   
+    .grid {
+        width: 350px;
+        height: 350px;
+        order: -1;  
+    }
+
+    .grid div {
+        width:  17.5px;
+        height: 17.5px; 
+    }
+    .change_background{
+        opacity: 0;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .instruction{
+        margin-top: -5rem;
+    }
+    p{
+        margin-left: 3rem;
+    }
+    .hintBg{
+        display: none;
+    }
+    .hintSm{
+        font-weight: 900;
+        animation:hint 1s 5;
+        /* font-size: 3rem; */
+        /* color: transparent; */
+        display: block;
+    }
+    @keyframes hint{
+        from, to { color: transparent }
+        50% { color: red; }
+    }
+}
