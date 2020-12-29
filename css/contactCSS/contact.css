@@ -312,6 +312,7 @@ header {
   }
 }
 
+/*===========================================*/
 .piano {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -427,7 +428,7 @@ header {
 
 .pillar {
   min-height: 60vh;
-  max-width: 100%;
+  max-width: 95%;
   margin: 0 auto;
   background-position: center;
   background-size: cover;
@@ -443,7 +444,7 @@ header {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   background: #000;
-  min-height: 65vh;
+  min-height: 60vh;
   /*pillar length*/
   width: 3rem;
   z-index: 2;
@@ -668,7 +669,7 @@ img {
 header,
 main,
 footer {
-  max-width: 1500px;
+  max-width: 1300px;
 }
 
 /*========================================================
@@ -750,23 +751,41 @@ html, body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
-.grid {
+.instruction {
+  color: #fff;
+}
+
+.instruction p {
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+.instruction .hintBg {
+  font-weight: 900;
+  -webkit-animation: hint 1s 5;
+          animation: hint 1s 5;
+  font-size: 5rem;
+  color: transparent;
+  margin: -10px;
+  padding: 0;
+}
+
+.xmas2020k {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 1000px;
-  height: 1000px;
   /* border: solid black; */
   /* margin: 0 auto; */
   margin-right: 5px;
 }
 
-.grid div {
+.xmas2020k a {
   width: 50px;
   height: 50px;
   text-align: center;
@@ -781,16 +800,22 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 100vh;
+  overflow: hidden;
+  background: #000;
+  border-top: 0.2rem solid #fff;
+  border-bottom: 0.2rem solid #fff;
 }
 
 .hide {
-  /*why this won't work*/
-  /* display: none;     */
   opacity: 0;
 }
 
 .background_color {
-  background: #fff;
+  background: #000;
 }
 
 .red {
@@ -814,7 +839,7 @@ a {
 }
 
 .change_background {
-  background: #0128a5;
+  background: #000;
 }
 
 h5:hover {
@@ -823,16 +848,6 @@ h5:hover {
   transition: .3s ease-out;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.hintBg {
-  font-weight: 900;
-  -webkit-animation: hint 1s 5;
-          animation: hint 1s 5;
-  font-size: 3rem;
-  color: transparent;
-  margin: -10px;
-  padding: 0;
 }
 
 @-webkit-keyframes hint {
@@ -858,47 +873,47 @@ h5:hover {
 }
 
 @media screen and (min-width: 1200px) {
-  .grid {
+  .xmas2020k {
     width: 900px;
     height: 900px;
   }
-  .grid div {
+  .xmas2020k a {
     width: 45px;
     height: 45px;
   }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1200px) {
-  .grid {
+  .xmas2020k {
     width: 750px;
     height: 750px;
   }
-  .grid div {
+  .xmas2020k a {
     width: 37.5px;
     height: 37.5px;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1000px) {
-  .grid {
+  .xmas2020k {
     width: 500px;
     height: 500px;
   }
-  .grid div {
+  .xmas2020k a {
     width: 25px;
     height: 25px;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .grid {
+  .xmas2020k {
     width: 350px;
     height: 350px;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
   }
-  .grid div {
+  .xmas2020k a {
     width: 17.5px;
     height: 17.5px;
   }
@@ -927,6 +942,9 @@ h5:hover {
     /* font-size: 3rem; */
     /* color: transparent; */
     display: block;
+  }
+  .xmas2020k a .red {
+    font-size: 1rem;
   }
   @-webkit-keyframes hint {
     from, to {

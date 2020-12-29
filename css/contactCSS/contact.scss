@@ -11,20 +11,35 @@ html, body {
 }
 a{
     text-decoration: none;
-    color: #000;
+    color: $p-white;
+}
+.instruction{
+    color: $p-white;
+}
+.instruction p{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+.instruction .hintBg{
+    font-weight: 900;
+    animation:hint 1s 5;
+    font-size: 5rem;
+    color: transparent;
+    margin: -10px;
+    padding: 0;
 }
 
-.grid {
+.xmas2020k {
     display: flex;
     flex-wrap: wrap;
     width: 1000px;
-    height: 1000px;
+    //height: 1000px;
     /* border: solid black; */
     /* margin: 0 auto; */
     margin-right: 5px;
 }
 
-.grid div {
+.xmas2020k a {
     width:  50px;
     height: 50px;  
     text-align: center;
@@ -33,14 +48,18 @@ a{
 .flex{
     display:flex;
     flex-direction: row;
+    justify-content: center;
+    max-height: 100vh;
+    overflow: hidden;
+    background: $p-black;
+    border-top: .2rem solid $p-white;
+    border-bottom: .2rem solid $p-white;
 }
 .hide{
-    /*why this won't work*/
-    /* display: none;     */
     opacity: 0;
 }
 .background_color {
-    background: #fff;
+    background: $p-black;
 }
 
 .red {
@@ -59,21 +78,15 @@ a{
     background: green;
 }
 .change_background {
-    background: rgb(1, 40, 165);
+    background: $p-black;
+    // background: rgb(1, 40, 165);
 }
 h5:hover{
     margin-left: 5px;
     transition: .3s ease-out;
     transform: scale(1.1);
 }
-.hintBg{
-    font-weight: 900;
-    animation:hint 1s 5;
-    font-size: 3rem;
-    color: transparent;
-    margin: -10px;
-    padding: 0;
-}
+
 @keyframes hint{
     from, to { color: transparent }
     50% { color: red; }
@@ -82,35 +95,35 @@ h5:hover{
     display: none;
 }
 @media screen and (min-width: 1200px){
-    .grid {
+    .xmas2020k {
         width: 900px;
         height: 900px;
     }
 
-    .grid div {
+    .xmas2020k a {
         width:  45px;
         height: 45px;  
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1200px){
-    .grid {
+    .xmas2020k {
         width: 750px;
         height: 750px;
     }
 
-    .grid div {
+    .xmas2020k a {
         width:  37.5px;
         height: 37.5px;  
     }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1000px){
-    .grid {
+    .xmas2020k {
         width: 500px;
         height: 500px;
     }
 
-    .grid div {
+    .xmas2020k a {
         width:  25px;
         height: 25px;  
     }
@@ -118,13 +131,13 @@ h5:hover{
 
 @media screen and (max-width:750px){
    
-    .grid {
+    .xmas2020k {
         width: 350px;
         height: 350px;
         order: -1;  
     }
 
-    .grid div {
+    .xmas2020k a {
         width:  17.5px;
         height: 17.5px; 
     }
@@ -150,6 +163,10 @@ h5:hover{
         /* color: transparent; */
         display: block;
     }
+    .xmas2020k a .red{
+        font-size: 1rem;
+    }
+
     @keyframes hint{
         from, to { color: transparent }
         50% { color: red; }

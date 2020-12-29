@@ -1,7 +1,7 @@
 
   .pillar{
     min-height: 60vh;
-    max-width: 100%;
+    max-width: 95%;
     margin: 0 auto;
     @include backgroundImg(); 
     z-index: $high-zindex;
@@ -15,7 +15,7 @@
     transform-style: preserve-3d;
   
     background: $p-black;
-    min-height: 65vh;   /*pillar length*/
+    min-height: 60vh;   /*pillar length*/
     
     width: 3rem;
   

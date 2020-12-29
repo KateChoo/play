@@ -8,6 +8,7 @@
 @import 'scss/header3keysHolder';
 @import 'scss/main1Pillar';
 @import 'scss/footer';
+// @import 'scss/signUp';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -26,7 +27,7 @@ img{
 header,
 main,
 footer{
-  max-width: 1500px;
+  max-width: 1300px;
 }
 /*========================================================
                       

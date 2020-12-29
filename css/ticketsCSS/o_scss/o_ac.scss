@@ -1,0 +1,216 @@
+// @import '../commonCSS/common.scss';
+//@import 'scss/main2carousel';
+
+:root{
+    --m-clr: #67e613;
+    --t-clr: rgb(194, 24, 24);   
+}
+html, body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.home{
+    color: #fff;
+    margin: 1rem 0 0 1.5rem;
+    padding: .5rem 0 .5rem 0;
+    cursor: pointer;
+    font-family: "Rye", cursive;
+}
+.grid {
+    max-width: 1350px;  //carousel
+    position: relative; //carousel
+    margin: 0 auto;
+    // padding: 0 .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    --width: 850px;
+    --height: 850px;
+    margin-top: 1rem;
+}
+
+.grid div { 
+    display: grid;
+    place-items: center;
+    /* display: flex;
+    flex-wrap: wrap; */
+    font-size: 1rem;
+    color: var(--t-clr);
+}
+/* 
+==============================*/
+.btn_group{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: .5rem;
+}
+.btn_group a{
+    padding: 1rem;
+    font-family: "PT Serif", serif;
+}
+.btn_group a:hover{
+    text-decoration: underline;
+}
+/* 
+==============================*/
+.btn{
+    background: maroon;
+    border-radius: 5px;
+    /* padding: .1rem; */
+}
+#modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30vw;
+  height: 30vh;
+  /* display: flex;
+  justify-content: center; */
+ }  
+.createdPlanel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    height: 30vh;
+}
+/* SCSS還沒寫
+==============================*/
+@media screen and (max-width: 1350px){
+    .grid {
+        --width: 1350px;
+        --height: 550px;
+    }
+    .grid div {
+        width: 9rem;
+        height: 5rem;
+    } 
+    /* .grid div {
+        width: calc(var(--width)/7);
+        height: calc(var(--height)/7);  
+    }  */
+} 
+@media screen and (min-width: 1250px) and (max-width: 1350px){
+    .grid {
+        --width: 1250px;
+        --height: 550px;
+    }
+    
+    .grid div {
+        width: calc(var(--width)/7);
+        height: calc(var(--height)/7);  
+    } 
+}
+@media screen and (min-width: 1150px) and (max-width: 1250px){
+    .grid {
+        --width: 1150px;
+        --height: 550px;
+    }
+    
+    .grid div {
+        width: calc(var(--width)/7);
+        height: calc(var(--height)/7);  
+    } 
+}
+@media screen and (min-width: 1050px) and (max-width: 1150px){
+    .grid {
+        --width: 1050px;
+        --height: 550px;
+    }
+    
+    .grid div {
+        width: calc(var(--width)/7);
+        height: calc(var(--height)/7);  
+    } 
+}
+@media screen and (min-width: 950px) and (max-width: 1050px){
+    .grid {
+        --width: 950px;
+        --height: 550px;
+    }
+    
+    .grid div {
+        width: calc(var(--width)/7);
+        height: calc(var(--height)/7);  
+    } 
+}
+@media screen and (min-width: 850px) and (max-width: 950px){
+    .grid {
+        --width: 850px;
+        --height: 550px;
+    }
+    
+    .grid div {
+        width: calc(var(--width)/7);
+        height: calc(var(--height)/7); 
+        font-size: 2.5rem; 
+    } 
+}
+@media screen and (min-width: 750px) and (max-width: 850px){
+    .grid {
+        --width: 750px;
+        --height: 550px;
+    }
+    
+    .grid div {
+        width: calc(var(--width)/7);
+        height: calc(var(--height)/7); 
+        font-size: 2rem; 
+    } 
+}
+@media screen and (max-width: 750px){
+  
+    h1{
+        text-align: center;
+        position: fixed;
+    }
+    .btn{
+        background: maroon;
+        border-radius: 5px;
+        padding: 0rem;
+    }
+    .grid {
+        flex-direction: column;
+        margin-top: 6rem;
+    }
+    .grid div {
+        width: 15rem;
+        height: 10rem;
+        margin: 0 auto;
+        font-size: 3rem;
+    } 
+
+    .grid div:nth-child(1),
+    .grid div:nth-child(2),
+    .grid div:nth-child(3),
+    .grid div:nth-child(4),
+    .grid div:nth-child(5),
+    .grid div:nth-child(6),
+    .grid div:nth-child(7),
+    .grid div:nth-child(8),
+    .grid div:nth-child(9),
+    .grid div:nth-child(41),
+    .grid div:nth-child(42){
+        display: none;
+    }
+}
+@media screen and (max-width: 750px){
+    .btn_group{
+        position: relative;
+        top: 20%;
+        left: 10%;
+        flex-direction: column;
+       
+    }
+    .btn_group a{
+        padding: 0rem;
+    }
+}

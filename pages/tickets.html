@@ -16,23 +16,13 @@
 <body>
   <div class="wrapper">
     <div class="header-wrapper">
-      <a href="#live" class="live"><i class="fas fa-map-marker-alt"></i></a>
-      <!-- <a href="" class="global"><i class="fas fa-globe"></i></a> -->
       <header>    
         <div class="piano">
-          <!-- <div class="wavy">
-            <span style="--i:1;">&#9835</span> 
-            <span style="--i:3;">&#9833</span>
-            <span style="--i:5;">&#9833</span>
-            <span style="--i:6;">&#9834</span>
-            <span style="--i:7;">&#9835</span>
-            <span style="--i:9;">&#9833</span>
-          </div> -->
           <div class="notes-wrapper">
             <div class="notes">
-              <div class="note note1">Happy</div>
+              <div class="note note1">Tickets</div>
               <div class="note note2">&#9833 &#9835</div>
-              <div class="note note3">New Year</div>
+              <div class="note note3">&#9834</div>
               <div class="note note4">&#9836 &#9837</div>
             </div>
           </div>  <!-- notes-wrapper -->  
@@ -40,9 +30,8 @@
 
         <div class="curtainNav">
           <ul>
-            <li><a href="../pages/tickets.html">Tickets</a></li>
-            <li><a href="../pages/classical.html">Classical Masters</a></li>
-            <li><a href="../pages/comtemporary.html">Contemporary Legends</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/contact.html">Contact Us</a></li>
           </ul>
         </div>
 
@@ -105,22 +94,36 @@
         <audio id="B" src="../notes/B.mp3"></audio>
       </header>
     </div> <!---header-wrapper-->
+    <!---==========================================-->
     <main>
       <div class="pillar">  
       </div>
       <section>
-        <h1 class="home" >2021 December Tickets</h1>
-        <div class="btn_group">
-            <a href="../index.html">Home</a>
-            <a href="../pages/about.html">About</a>
-            <a href="../pages/contact.html">Contact Us</a>
-            <a href="../pages/comtemporary.html">Comtemporary Legends</a>
-            <a href="../pages/classical.html">Classical Masters</a>
-        </div>
-        <div class="grid">
-        </div>
+        <div class="container">
+            <div class="calendar">
+              <div class="month">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="date">
+                  <h1></h1>
+                  <p></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+              </div>
+              <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              <div class="days"></div>
+            </div>
+          </div>
       </section>
     </main>
+    <!---==========================================-->
     <footer class="light">
         <section class="footer-wrapper">
           <div class="footer-list">
@@ -156,6 +159,7 @@
         </section> <!--footer-wrapper-->
       </footer>
     </div>
+    <!-- <script src="../js/carousel.js"></script> -->
     <script src="../js/ac.js"></script>
   </body>
   </html>

@@ -1,0 +1,21 @@
+12/29
+先關掉
+about.scss
+
+common.scss:
+signup.scss
+_curtainNav nav 
+
+comtemporary.scss:
+// @import 'scss/main2pianist';
+// @import 'scss/main3article';
+
+tickets.scss:
+// @import 'scss/main2carousel';
+
+12/28/2020
+pillar max-width
+---
+ac.scss
+.month
+ // width: 100%;
