@@ -13,7 +13,7 @@
     align-items: center;
   }
   .calendar {
-    width: 45rem;
+    width: 40rem;
     /* height: 52rem; */
     background-color: #000;
     margin: 1rem auto;
@@ -71,7 +71,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 0.1rem;
-    width: calc(44.2rem / 7); //45-0.8
+    width: calc(39.2rem / 7); //45-0.8
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,13 +82,13 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 0.2rem;
+    padding: 0.2rem;  //1.4
   }
   
   .days div {
     font-size: 1.4rem;
-    margin: 0.3rem;
-    width: calc(40.2rem / 7);
+    margin: 0.3rem;   //2.1
+    width: calc(35.2rem / 7);  //40.4
     height: 3rem;
     display: flex;
     justify-content: center;
@@ -115,20 +115,31 @@
   /*=============*/
   .createdPlanel{
 
-}
+  }
 .days div .hide{
   display:none;
 }
 @media screen and (max-width: 700px){
-  .calendar {
-    width: 35rem;
+  // section{
+  //   position: absolute;
+  // }
+  // main section .container{
+  //   // width: 60%;
+  //   position: relative;
+  //   top: 10%;
+  //   left: 10%;
+  // }
+  main section .calendar {
+    //overflow-x: unset;
+    //overflow-y: scroll;
+    //width: 25rem;
   }
-  .weekdays div {
-    width: calc(34.2rem / 7); //45-0.8
-  }
-  .days div {
-    width: calc(30.2rem / 7);
-  }
+  // main section .weekdays div {
+  //   width: calc(24.2rem / 7); //45-0.8
+  // }
+  // main section.days div {
+  //   width: calc(20.2rem / 7);
+  // }
   
 }
   

@@ -119,8 +119,8 @@ header {
 .note3,
 .note4 {
   position: absolute;
-  -webkit-animation: notes 5s linear infinite;
-          animation: notes 5s linear infinite;
+  -webkit-animation: notes 2s linear infinite;
+          animation: notes 2s linear infinite;
   font-size: 2rem;
   opacity: 0;
 }
@@ -757,7 +757,7 @@ main {
 }
 
 .calendar {
-  width: 45rem;
+  width: 40rem;
   /* height: 52rem; */
   background-color: #000;
   margin: 1rem auto;
@@ -817,7 +817,7 @@ main {
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
-  width: calc(44.2rem / 7);
+  width: calc(39.2rem / 7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,7 +843,7 @@ main {
 .days div {
   font-size: 1.4rem;
   margin: 0.3rem;
-  width: calc(40.2rem / 7);
+  width: calc(35.2rem / 7);
   height: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -877,17 +877,5 @@ main {
 /*=============*/
 .days div .hide {
   display: none;
-}
-
-@media screen and (max-width: 700px) {
-  .calendar {
-    width: 35rem;
-  }
-  .weekdays div {
-    width: calc(34.2rem / 7);
-  }
-  .days div {
-    width: calc(30.2rem / 7);
-  }
 }
 /*# sourceMappingURL=ac.css.map */
