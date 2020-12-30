@@ -104,7 +104,8 @@ position: relative;
         }
       }
   }
-  .fab{
+  .fab,
+  .fas{
     color: darken($p-white, 40%);
   } 
   
@@ -119,6 +120,14 @@ position: relative;
   .fa-facebook{
     position: absolute;
     bottom: 0%;
+    right: 20%;
+    &:hover{
+      color: $p-white;
+    }
+  }
+  .fa-candy-cane{
+    position: absolute;
+    bottom: 25%;
     right: 20%;
     &:hover{
       color: $p-white;

@@ -578,7 +578,8 @@ footer {
   color: #fff;
 }
 
-.musicSymbol .fab {
+.musicSymbol .fab,
+.musicSymbol .fas {
   color: #999999;
 }
 
@@ -599,6 +600,16 @@ footer {
 }
 
 .musicSymbol .fa-facebook:hover {
+  color: #fff;
+}
+
+.musicSymbol .fa-candy-cane {
+  position: absolute;
+  bottom: 25%;
+  right: 20%;
+}
+
+.musicSymbol .fa-candy-cane:hover {
   color: #fff;
 }
 
