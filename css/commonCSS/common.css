@@ -119,8 +119,8 @@ header {
 .note3,
 .note4 {
   position: absolute;
-  -webkit-animation: notes 2s linear infinite;
-          animation: notes 2s linear infinite;
+  -webkit-animation: notes 3.5s linear infinite;
+          animation: notes 3.5s linear infinite;
   font-size: 2rem;
   opacity: 0;
 }
