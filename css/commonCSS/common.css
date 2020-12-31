@@ -335,6 +335,7 @@ header {
   z-index: 999;
 }
 
+.fa-candy-cane,
 .pianoKeys li:nth-child(4).pressHint {
   background: #A53869;
   -webkit-animation: 1s pressHint infinite;
