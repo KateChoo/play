@@ -23,7 +23,6 @@ const randomColor = ()=> {
   green = Math.floor(Math.random() * 256 );
   blue = Math.floor(Math.random() * 256 );
   rgbColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
-  // html += '<div style="background-color:' + rgbColor + '"></div>';
   return rgbColor;
   }
 }
@@ -55,21 +54,15 @@ whiteKall.forEach(white => {
 
 function pressHint(){
   indicators[3].classList.add('pressHint')
-  //indicators[3].style.background = randomColor()
   indicators[3].textContent = '按'
 }
 function hintToggle(indi){
   indicators[3].classList.remove('pressHint')
-  //indicators[3].style.background = ''
   indicators[3].textContent = ''
   indi.style.background = randomColor()
   indi.addEventListener('mouseleave', ()=>{
     indi.style.background = ''
   })
-  // indi.classList.add('hint');
-  // indi.addEventListener('mouseleave', ()=>{
-  //   indi.classList.remove('hint');
-  // })
 }
 document.addEventListener('keydown', e => {
   if (e.repeat) return
