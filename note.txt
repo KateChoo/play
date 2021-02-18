@@ -1,4 +1,8 @@
-12/29
+2/18
+close all sub links
+
+
+---
 先關掉
 about.scss
 
@@ -13,7 +17,7 @@ comtemporary.scss:
 tickets.scss:
 // @import 'scss/main2carousel';
 
-12/28/2020
+---
 pillar max-width
 ---
 ac.scss
